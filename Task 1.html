@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Courier New', Courier, monospace;
+    }
+    body{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    #nav{
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        height: 50px;
+        width: 100%;
+        color: white;
+        background-color: black;
+        display: flex;
+    }
+    #nav1{
+        font-weight: bolder;
+        font-size: 30px;
+        color: white;
+        height: 50px;
+        width: 50%;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+    }
+    #nav2{
+        letter-spacing:-2px;
+        font-size: 20px;
+        color: white;
+        height: 50px;
+        width: 50%;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .anchor{
+        width: 100px;
+        cursor: pointer;
+        transition: 0.2ms;
+    }
+    .anchor:hover{
+        font-size: 25px;
+    }
+    #body1{
+        width: 100%;
+        background-color: rgb(0, 247, 239);
+        position: absolute;
+        top: 50px;
+        display:flex;
+        justify-content: space-between;
+
+    }
+    img{
+        background-size:contain;
+    }
+    h2{
+        font-size: 20px;
+    }
+    .jfu{
+        background:linear-gradient(120deg,red,rgb(204, 255, 0),rgb(88, 0, 229));
+        background-clip: text;
+        -webkit-text-fill-color:transparent;
+        font-size: 80px;
+        font-weight: bolder;
+        line-height: 65px;
+    }
+
+    #first{
+        padding-left: 50px;
+    }
+    #second{
+        padding-left: 100px;
+    }
+    #off1{
+        font-size: 25px;
+        background-color: black;
+        color: white;
+        display: inline;
+    }
+    #off2{
+        font-size: 25px;
+        background-color: orange;
+        color: black;
+        display: inline;
+    }
+    #offer{
+        width: 400px;
+        display: flex;
+        padding-left: 100px;
+    }
+    @media(max-width:361px){
+        #nav{
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 1;
+        height: 30px;
+        }
+        #nav1{
+        font-weight: bolder;
+        font-size: 25px;
+        color: white;
+        height: 25px;
+        width: 35%;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+    }
+    #nav2{
+        letter-spacing:-2px;
+        font-size: 10px;
+        color: white;
+        height: 20px;
+        width: 65%;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    .anchor{
+        align-items: center;
+        width:30px;
+        cursor: pointer;
+        transition: 0.2ms;
+    }
+    .anchor:hover{
+        font-size: 13px;
+    }
+    #body1{
+        height: 1500px;
+        width: 395px;
+        position: absolute;
+        top: 30px;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+
+    }
+    h2{
+        font-size: 12px;
+        padding-left: 25px;
+    }
+    #zero{
+        padding-left: 12px;
+    }
+    b{
+        padding-left: 12px;
+    }
+    #first{
+        padding-left: 70px;
+    }
+    #second{
+        padding-left: 120px;
+    }
+    #offer{
+        
+        width: 400px;
+        display: flex;
+        padding-left: 50px;
+    }
+    img{
+        width: 100%;
+    }
+    }   
+</style>
+<body>
+    <div id="nav">
+        <div id="nav1">
+            VF CITY
+        </div>
+        <div id="nav2">
+            <div id="home" class="anchor">Home</div>
+            <div id="About" class="anchor">About</div>
+            <div id="Services" class="anchor">Services</div>
+            <div id="Login" class="anchor">Contact</div>
+        </div>
+    </div>
+    <div id="body1">
+        <img src="https://i.pinimg.com/474x/8c/09/71/8c097126651784e01f704b3c4082078e.jpg" alt="Image is not found" height="525px">
+        <div id="head">
+        <h2>✦ DON’T HIT PAUSE — STYLE NEVER STOPS. <br/>✦⚡ FASHION NEVER SLEEPS — IT ONLY SWAPS. ⚡</h2> <br/>
+        <b>𝒩𝑒𝓌 𝒜𝓇𝓇𝒾𝓋𝒶𝓁𝓈</b><br/><h1 id="zero" class="jfu">𝗝𝗨𝗦𝗧 </h1><br/><h1 id="first" class="jfu">𝗙𝗢𝗥</h1><br/><h1 id="second" class="jfu">𝗬𝗢𝗨 </h1><br/><div id="offer"><h2 id="off1">FOR ONLINE <br/>ORDER</h2> <h2 id="off2">30%OFF</h2></div>
+        </div>
+        <img src="https://i.pinimg.com/736x/04/9c/1b/049c1b3c146267671b0cd1258d7d3066.jpg" alt="Image is not found" height="525px">
+    </div>
+</body>
+<script>
+    const body=document.querySelector("body")
+    const nav=document.querySelector("#nav")
+
+    window.addEventListener("scroll",function(){
+        nav.style.backgroundColor="grey"
+    })
+</script>
+</html>
