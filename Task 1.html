@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
 </head>
 <style>
     *{
@@ -13,6 +17,7 @@
         font-family: 'Courier New', Courier, monospace;
     }
     body{
+        background-color: #fff8e7;
         height: 100%;
         width: 100%;
         display: flex;
@@ -26,25 +31,34 @@
         height: 50px;
         width: 100%;
         color: white;
-        background-color: black;
+        background-color: #1c1c1e;
         display: flex;
+        justify-content: space-between;
     }
     #nav1{
         font-weight: bolder;
         font-size: 30px;
-        color: white;
+        color: #f5f5f7;
         height: 50px;
-        width: 50%;
+        width: 18%;
         border-radius: 10px;
         display: flex;
         align-items: center;
+        justify-content: space-between;
+    }
+    #menu{
+        color: #f5f5f7;
+        cursor: pointer;
+    }
+    #menu:hover{
+        color: #ffd700;
+        font-size: 35px;
     }
     #nav2{
-        letter-spacing:-2px;
         font-size: 20px;
         color: white;
         height: 50px;
-        width: 50%;
+        width: 20%;
         border-radius: 10px;
         display: flex;
         align-items: center;
@@ -58,24 +72,115 @@
     }
     .anchor:hover{
         font-size: 25px;
+        color: #ffd700;
     }
     #body1{
+        color: #121212;
         width: 100%;
-        background-color: rgb(0, 247, 239);
         position: absolute;
         top: 50px;
         display:flex;
         justify-content: space-between;
 
     }
+    #body2{   
+        color: #121212;
+        position: absolute;
+        top:675px;
+        height: 900px;
+        width: 100%;
+        display:flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+
+    }
+    #trdimg{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        font-size: 12px;
+        font-weight:900;
+    }
+    #frdimg{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        font-size: 12px;
+        font-weight:900;
+    }
+    
+    #men1{
+        background-image: url("https://images.unsplash.com/photo-1618886614638-80e3c103d31a?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bW9kZWxpbmd8ZW58MHx8MHx8fDA%3D");
+        height:300px;
+        width: 200px;
+        background-size: cover;
+    }
+    button{
+        height: 10%;
+        width: 45%;
+        margin-left: 25%;
+        margin-top: 130%;
+        background-color: #f5f5f5;
+        color: #121212;
+        border: 1px solid #ccc;
+        transition: all 0.3s ease-in-out;
+    }
+    button:hover{
+        font-weight: bold;
+        background-color: #ffd700;
+        height: 15%;
+        width: 65%;
+        font-size: 18px;
+        color: #1c1c1e;
+        margin-left: 20%;
+        margin-top: 125%;
+    }
+
+    #men2{
+        background-image: url("https://www.pnrao.com/wp-content/uploads/2024/01/1F4A0550-copy.webp");
+        height:300px;
+        width: 200px;
+        background-size: cover;
+    }
+    #men3{
+        background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7T1puX0Xm0Xc4L7RrWrtNZKO8NbkJ-9uL3A&s");
+        height:300px;
+        width: 200px;
+        background-size: cover;
+    }
+    #women1{
+        background-image: url("https://assets.myntassets.com/w_412,q_60,dpr_2,fl_progressive/assets/images/22732724/2023/4/11/039efdb0-8cb2-4fd5-9233-dfeaea2e2be31681231028297KVSFABWomenBlackNetSequenceSemiStitchedLehengaCholiWithDupat1.jpg");
+        height:300px;
+        width: 200px;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    #women2{
+        background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9kIOfsPlZJVTzXtXaFrsjg4ZzUKUUgVJKZQ&s");
+        height:300px;
+        width: 200px;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    #women3{
+        background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8e4gg1zC6GPh3UCbBzD6XdbXI3hnVC_XOSw&s");
+        height:300px;
+        width: 200px;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    button{
+        cursor: pointer;
+        z-index: 1;
+    }
     img{
-        background-size:contain;
+        background-size:cover;
     }
     h2{
         font-size: 20px;
     }
     .jfu{
-        background:linear-gradient(120deg,red,rgb(204, 255, 0),rgb(88, 0, 229));
+        background:linear-gradient(120deg, #ff758c, #ffb88c, #c3aed6);
         background-clip: text;
         -webkit-text-fill-color:transparent;
         font-size: 80px;
@@ -91,13 +196,13 @@
     }
     #off1{
         font-size: 25px;
-        background-color: black;
+        background-color: #002244;
         color: white;
         display: inline;
     }
     #off2{
         font-size: 25px;
-        background-color: orange;
+        background-color: gold;
         color: black;
         display: inline;
     }
@@ -105,6 +210,90 @@
         width: 400px;
         display: flex;
         padding-left: 100px;
+    }
+    #fstimg{
+        border-top-right-radius: 200px;
+        border-bottom-right-radius: 200px;
+    }
+    #sndimg{
+        border-top-left-radius: 200px;
+        border-bottom-left-radius: 200px;
+    }
+    #inf{
+        color: #e0e0e0;
+        position: absolute;
+        top: 1575px;
+        background-color: #1c1c1e;
+        height: 300px;
+        width: 100%;
+        display: flex;
+    }
+
+
+
+    #inf li:hover {
+        color: #ffd700; /* Soft gold on hover */
+        cursor: pointer;
+    }
+    h3{
+        color: #c0c0c0;
+        height: 22px;
+        font-size: 14px;
+        padding-left: 10px;
+        padding-bottom: 30px;
+    }
+    li{
+        color: #e0e0e0;
+        font-weight: 600;
+        list-style-type: none;
+        padding-left: 10px;
+        font-size: 13px;
+        letter-spacing: -1px;
+        line-height: 20px;
+        transition: color 0.3s ease;
+    }
+    #fb{
+        cursor: pointer;
+        color: blue;
+        font-size: 15px;
+    }
+    a{
+        text-decoration: none;
+    }
+    #ig{
+        cursor: pointer;
+        background:linear-gradient(825deg,rgb(238, 0, 255),rgb(255, 0, 0),rgb(255, 251, 3));
+        background-clip: text;
+        -webkit-text-fill-color:transparent;
+        font-size: 15px;
+    }
+    #tw{
+        cursor: pointer;
+        color: rgb(0, 174, 255);
+        font-size: 15px;
+    }
+    #yt{
+        cursor: pointer;
+        color: red;
+        font-size: 15px;
+    }
+    #icon{
+        text-align: center;
+    }
+    #fstinf{
+        height: 70%;
+        margin-top: 40px;
+        width: 50%;
+        display: flex;
+        justify-content: space-evenly;
+        border-right: 2px solid rgb(91, 88, 88);
+    }
+    #sndinf{
+        height: 60%;
+        margin-top: 40px;
+        width: 50%;
+        display: flex;
+        justify-content: space-evenly;
     }
     @media(max-width:361px){
         #nav{
@@ -183,32 +372,85 @@
     }   
 </style>
 <body>
-    <div id="nav">
-        <div id="nav1">
-            VF CITY
+    
+        <div id="nav">
+            <div id="nav1">
+                <h4 id="menu"><i class="ri-menu-line"></i></h4> VF CITY
+            </div>
+            <div id="nav2">
+                <div id="home" class="anchor"><i class="ri-home-2-fill"></i></div>
+                <div id="Services" class="anchor"><i class="ri-customer-service-fill"></i></div>
+                <div id="Login" class="anchor"><i class="ri-contacts-fill"></i></div>
+            </div>
+    
         </div>
-        <div id="nav2">
-            <div id="home" class="anchor">Home</div>
-            <div id="About" class="anchor">About</div>
-            <div id="Services" class="anchor">Services</div>
-            <div id="Login" class="anchor">Contact</div>
+        <div id="body1">
+            <img id="fstimg" src="https://i.pinimg.com/474x/8c/09/71/8c097126651784e01f704b3c4082078e.jpg" alt="Image is not found" height="525px">
+            <div id="head">
+            <h2>✦ DON’T HIT PAUSE — STYLE NEVER STOPS. <br/>✦⚡ FASHION NEVER SLEEPS — IT ONLY SWAPS. ⚡</h2> <br/>
+            <b>𝒩𝑒𝓌 𝒜𝓇𝓇𝒾𝓋𝒶𝓁𝓈</b><br/><h1 id="zero" class="jfu">𝗝𝗨𝗦𝗧 </h1><br/><h1 id="first" class="jfu">𝗙𝗢𝗥</h1><br/><h1 id="second" class="jfu">𝗬𝗢𝗨 </h1><br/><div id="offer"><h2 id="off1">FOR ONLINE <br/>ORDER</h2> <h2 id="off2">30%OFF</h2></div>
+            </div>
+            <img id="sndimg" src="https://i.pinimg.com/736x/04/9c/1b/049c1b3c146267671b0cd1258d7d3066.jpg" alt="Image is not found" height="525px">
         </div>
-    </div>
-    <div id="body1">
-        <img src="https://i.pinimg.com/474x/8c/09/71/8c097126651784e01f704b3c4082078e.jpg" alt="Image is not found" height="525px">
-        <div id="head">
-        <h2>✦ DON’T HIT PAUSE — STYLE NEVER STOPS. <br/>✦⚡ FASHION NEVER SLEEPS — IT ONLY SWAPS. ⚡</h2> <br/>
-        <b>𝒩𝑒𝓌 𝒜𝓇𝓇𝒾𝓋𝒶𝓁𝓈</b><br/><h1 id="zero" class="jfu">𝗝𝗨𝗦𝗧 </h1><br/><h1 id="first" class="jfu">𝗙𝗢𝗥</h1><br/><h1 id="second" class="jfu">𝗬𝗢𝗨 </h1><br/><div id="offer"><h2 id="off1">FOR ONLINE <br/>ORDER</h2> <h2 id="off2">30%OFF</h2></div>
+        <div id="body2">
+            <div id="trdimg">
+                <div><div id="men1"><button>Buy</button></div><br>Jet Black coat premium <br> blend of polyester Tailored <br> Slim Fit — ideal for a <br> clean, modern silhouette</div>
+                <div><div  id="men2"><button>Buy</button></div> <br> Light Grey with Subtle Checks <br> a blend of lightweight wool, <br> polyester and viscose.Tailored <br> Three-Piece Suit – Blazer, <br> Waistcoat, and Trousers</div>
+                <div><div  id="men3"><button>Buy</button></div> <br>Deep Burgundy / Wine Red <br> High-quality poly-viscose <br> blend with elastane.Trendy <br> Two-Piece Suit – Blazer & <br> Trousers</div>
+            </div>
+            <div id="frdimg">
+                <div><div id="women1"><button>Buy</button></div><br>Jet Black with Silver Mirror <br> Embellishments
+Material with <br> Lehenga (Skirt),Choli (Blouse) <br>,Dupatta</div>
+                <div><div id="women2"><button>Buy</button></div><br>Metallic Silver / Ice Grey <br> Embellishments
+Material with <br> Lehenga (Skirt),Choli (Blouse) <br>,Dupatta</div>
+                <div><div id="women3"><button>Buy</button></div><br>Deep Maroon with Antique Gold <br> Embroidery
+Material Embellishments <br> Material with Lehenga (Skirt),<br>Choli (Blouse),Dupatta</div>
+            </div>
         </div>
-        <img src="https://i.pinimg.com/736x/04/9c/1b/049c1b3c146267671b0cd1258d7d3066.jpg" alt="Image is not found" height="525px">
+    
+        <div id="inf">
+            <div id="fstinf">
+            <ul><h3>ABOUT</h3>
+            <li>Contact Us</li>
+            <li>Careers</li> </ul>
+            <ul><h3>HELP</h3>
+            <li>Payments</li>
+            <li>Shipping</li>
+            <li>Cancellations & Returns</li>
+            <li>FAQ</li></ul>
+            <ul><h3>CONSUMER POLICY</h3>
+            <li>Terms Of Use</li>
+            <li>Privacy</li>
+            <li>Sitemap</li>
+            <li>Grievance Redressal</li>
+            <li>EPR Compliace</li></ul>
+            <ul id="icon"><h3>SOCIAL</h3>
+            <li id="fb"><a href="https://www.facebook.com/vishal.gorai.923"><i class="ri-facebook-circle-fill"></i></a></li>
+            <li id="ig"><a href="https://www.instagram.com/vishal_gorai65/"><i class="ri-instagram-fill"></i></a></li>
+            <li id="tw"><i class="ri-twitter-fill"></i></li>
+            <li id="yt"><a href="https://www.youtube.com/channel/UCf-YzoyvRhkF4h4XK6o_QaA"><i class="ri-youtube-fill"></i></a></li></ul>
+        </div>
+        <div id="sndinf">
+            <ul><h3>Mail Us:</h3>
+            <li>Vishal Fashion Private Limited,<br>Buildings Alyssa, Begonia & <br>Clove Empassy Tech Village, <br>Outer Ring Road
+            ,Devarabeesanahalli Village. <br>Bengaluru, 560103, <br>Karnataka, India</li></ul>
+            <ul><h3>Registered Office Address:</h3>
+            <li>Vishal Fashion Private Limited,<br>Buildings Alyssa, Begonia & <br>Clove Empassy Tech Village, <br>Outer Ring Road
+            ,Devarabeesanahalli Village. <br>Bengaluru, 560103, <br>Karnataka, India <br>CIN : U5452KH2022PFT066147 <br>Telephone: 022-74894821</li></ul>
+        </div>
+
     </div>
 </body>
-<script>
-    const body=document.querySelector("body")
-    const nav=document.querySelector("#nav")
+    <script>
+        const body=document.querySelector("body")
+        const nav=document.querySelector("#nav")
 
-    window.addEventListener("scroll",function(){
-        nav.style.backgroundColor="grey"
-    })
+        window.addEventListener("scroll",function(){
+            if (window.scrollY ) {
+            nav.style.backgroundColor = "grey"; // Darker when scrolling
+            } else {
+            nav.style.backgroundColor = "#111"; // Original color
+        }
+        })
 </script>
 </html>
