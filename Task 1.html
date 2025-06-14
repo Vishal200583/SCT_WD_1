@@ -44,7 +44,7 @@
         border-radius: 10px;
         display: flex;
         align-items: center;
-        justify-content: space-between;
+        justify-content: space-evenly;
     }
     #menu{
         color: #f5f5f7;
@@ -295,81 +295,162 @@
         display: flex;
         justify-content: space-evenly;
     }
-    @media(max-width:361px){
-        #nav{
-        position: fixed;
-        top: 0;
-        width: 100%;
-        z-index: 1;
-        height: 30px;
-        }
-        #nav1{
-        font-weight: bolder;
-        font-size: 25px;
-        color: white;
-        height: 25px;
-        width: 35%;
-        border-radius: 10px;
-        display: flex;
-        align-items: center;
-    }
-    #nav2{
-        letter-spacing:-2px;
-        font-size: 10px;
-        color: white;
-        height: 20px;
-        width: 65%;
-        border-radius: 10px;
-        display: flex;
-        align-items: center;
-        justify-content: space-evenly;
-    }
-    .anchor{
-        align-items: center;
-        width:30px;
-        cursor: pointer;
-        transition: 0.2ms;
-    }
-    .anchor:hover{
-        font-size: 13px;
-    }
-    #body1{
-        height: 1500px;
-        width: 395px;
-        position: absolute;
-        top: 30px;
-        display:flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-between;
 
-    }
-    h2{
-        font-size: 12px;
-        padding-left: 25px;
-    }
-    #zero{
-        padding-left: 12px;
-    }
-    b{
-        padding-left: 12px;
-    }
-    #first{
-        padding-left: 70px;
-    }
-    #second{
-        padding-left: 120px;
-    }
-    #offer{
-        
-        width: 400px;
-        display: flex;
-        padding-left: 50px;
-    }
-    img{
-        width: 100%;
-    }
-    }   
+@media (max-width: 361px) {
+  html, body {
+    width: 100%;
+    overflow-x: hidden;
+  }
+
+  #nav {
+    height: 45px;
+    padding: 0 10px;
+    justify-content: space-between;
+  }
+
+  #nav1, #nav2 {
+    font-size: 16px;
+    width: auto;
+  }
+
+  #nav2 {
+    gap: 10px;
+    justify-content: flex-end;
+  }
+
+  .anchor {
+    font-size: 12px;
+    width: auto;
+  }
+
+  #body1 {
+    flex-direction: column;
+    align-items: center;
+    padding-top: 45px;
+    gap: 15px;
+    position: relative;
+  }
+
+  #fstimg{
+    width: 100%;
+    height: auto;
+    border-radius: 20px 20px 200px 200px;
+  }
+
+  #sndimg{
+    width: 100%;
+    height: auto;
+    border-radius: 200px 200px 20px 20px;
+  }
+  #head {
+    padding: 10px;
+    text-align: center;
+  }
+
+  h2 {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .jfu {
+    font-size: 35px;
+    line-height: 40px;
+  }
+
+  #first, #second, #zero {
+    padding: 0;
+  }
+
+  #offer {
+    margin-right: 90%;
+    display: flex;
+    width: 70%;
+    gap: 10px;
+    padding: 0;
+  }
+
+    #off2 {
+    height: 40px;
+    width: 40%;
+    font-size: 18px;
+    padding: 5px 10px;
+  }
+  #off1{
+    height: 40px;
+    width: 80%;
+    font-size: 18px;
+    padding: 5px 10px;
+  }
+
+  #body2 {
+    position: relative;
+    top: auto;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 10px;
+    gap: 20px;
+  }
+
+  #trdimg, #frdimg {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  #men1, #men2, #men3,
+  #women1, #women2, #women3 {
+        height:200%;
+        width: 60%;
+  }
+
+  button {
+    width: 60%;
+    height: 40px;
+    margin: 10px auto 0;
+    font-size: 16px;
+  }
+
+  #inf {
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    top: auto;
+    height: auto;
+    padding: 20px;
+    gap: 30px;
+  }
+
+  #fstinf, #sndinf {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    margin: 0;
+    border: none;
+  }
+
+  h3 {
+    font-size: 16px;
+    padding-bottom: 10px;
+  }
+
+  li {
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  #icon {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    width: 100%;
+  }
+
+  #fb, #ig, #tw, #yt {
+    font-size: 20px;
+  }
+}
+
+  
 </style>
 <body>
     
